@@ -32,11 +32,11 @@ const Basic = (
             <h1 style={styles.headlineText} >{headlineText.value}</h1>
             <hr />
             <br />
-            <ul style={{ ...styles.honours }}>
+            <ul style={styles.honours}>
                 {
-                    honoursAwards.value.map((honour, id) => (
-                        <li key={id}>{honour.value}</li>
-                    ))
+                    honoursAwards.value.map((honour, id) => {
+                        return <li key={id}>{honour.value}</li>
+                    })
                 }
             </ul>
 
