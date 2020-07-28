@@ -53,13 +53,13 @@ const Basic = (
                 {
                     skills.value.map((skill) => {
                         return <div key={skill.value} style={styles.flexBox}>
-                            <div style={styles.skill}>{skill.value}</div>
+                            <div style={styles.skill}>{skill.value.title.value}</div>
                             <div style={styles.bar}>
-                                <div style={{ ...styles.barLen, width: skill.percentage.value + '%' }}></div>
-                                {skill.percentage.value < 80 && skill.percentage.value+'%'}
+                                <div style={{ ...styles.barLen, width: skill.value.percentage.value + '%' }}></div>
+                                {skill.value.percentage.value < 80 && skill.value.percentage.value + '%'}
                             </div>
                             <div style={{ ...styles.percent, color: theme.value.contrast }}>
-                                {skill.percentage.value >= 80 && skill.percentage.value+'%'}
+                                {skill.value.percentage.value >= 80 && skill.value.percentage.value + '%'}
                             </div>
                         </div>
                     })

@@ -20,52 +20,84 @@ const properties = {
         value: [
             {
                 name: 'Skill',
-                type: propertyTypes.STRING,
-                value: 'Skill 1',
-                percentage: {
-                    name: 'Percentage',
-                    type: propertyTypes.NUMBER,
-                    value: 47,
-                    required: true
+                type: propertyTypes.OBJECT,
+                value: {
+                    type: propertyTypes.OBJECT,
+                    percentage: {
+                        name: 'Percentage',
+                        type: propertyTypes.NUMBER,
+                        value: 47,
+                        required: true
+                    },
+                    title: {
+                        name: 'Title',
+                        type: propertyTypes.STRING,
+                        value: 'Skill 1',
+                        required: true
+                    }
                 },
                 required: true
             },
             {
                 name: 'Skill',
-                type: propertyTypes.STRING,
-                value: 'Skill 2',
-                percentage: {
-                    name: 'Percentage',
-                    type: propertyTypes.NUMBER,
-                    value: 60,
-                    required: true
+                type: propertyTypes.OBJECT,
+                value: {
+                    type: propertyTypes.OBJECT,
+                    percentage: {
+                        name: 'Percentage',
+                        type: propertyTypes.NUMBER,
+                        value: 70,
+                        required: true
+                    },
+                    title: {
+                        name: 'Title',
+                        type: propertyTypes.STRING,
+                        value: 'Skill 2',
+                        required: true
+                    }
                 },
                 required: true
             },
             {
                 name: 'Skill',
-                type: propertyTypes.STRING,
-                value: 'Skill 3',
-                percentage: {
-                    name: 'Percentage',
-                    type: propertyTypes.NUMBER,
-                    value: 20,
-                    required: true
+                type: propertyTypes.OBJECT,
+                value: {
+                    type: propertyTypes.OBJECT,
+                    percentage: {
+                        name: 'Percentage',
+                        type: propertyTypes.NUMBER,
+                        value: 20,
+                        required: true
+                    },
+                    title: {
+                        name: 'Title',
+                        type: propertyTypes.STRING,
+                        value: 'Skill 3',
+                        required: true
+                    }
                 },
                 required: true
             },
             {
                 name: 'Skill',
-                type: propertyTypes.STRING,
-                value: 'Skill 4',
-                percentage: {
-                    name: 'Percentage',
-                    type: propertyTypes.NUMBER,
-                    value: 100,
-                    required: true
+                type: propertyTypes.OBJECT,
+                value: {
+                    type: propertyTypes.OBJECT,
+                    percentage: {
+                        name: 'Percentage',
+                        type: propertyTypes.NUMBER,
+                        value: 100,
+                        required: true
+                    },
+                    title: {
+                        name: 'Title',
+                        type: propertyTypes.STRING,
+                        value: 'Skill 4',
+                        required: true
+                    }
                 },
                 required: true
-            }
+            },
         ],
         required: true
     }
