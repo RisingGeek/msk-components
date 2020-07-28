@@ -1,6 +1,6 @@
 const metadata = {
-  name: "Percentage",
-  description: "Percentage variant for skill-set",
-}
+  name: 'Percentage',
+  description: 'Percentage variant for skill-set'
+};
 
 export default metadata;
