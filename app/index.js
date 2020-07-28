@@ -65,7 +65,7 @@ const App = () => {
   return (
     <div>
 
-      {!isMobile && <div> 
+      {!isMobile && <div>
         <ModulesList modules={modules} />
         {selectedVariant && <LayoutToolbar />}
         {selectedModule && <ComponentsList components={modules[selectedModule].components} />}
